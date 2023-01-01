@@ -1,0 +1,16 @@
+import random
+x = input ('hay you cant make a choice? ill make it for you yes or no:')
+if x != "yes":
+    quit()
+
+number_of_inputs = int(input('how maney optins do you have in mind:'))
+lst = []
+finalChoice = 0
+size = 0
+for i in range(number_of_inputs):
+    lst.append(input("please enter an option: "))
+    size += 1
+
+finalChoice = random.randint(0,size -1)
+print("I'd choose this option:",lst[finalChoice])
+input()
